@@ -1,0 +1,145 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.4
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.3s
+ ○ Compiling / ...
+ ⚠ ./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/components/shared/Providers.tsx
+
+./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/app/layout.tsx
+ GET / 200 in 49527ms
+ ⚠ ./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/components/shared/Providers.tsx
+
+./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/app/layout.tsx
+ ⚠ ./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/sign-client/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/receiver/index.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/screens/WalletConnectReceiverScreen.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/Details.js
+
+./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/app/layout.tsx
+ ⚠ ./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/sign-client/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/receiver/index.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/screens/WalletConnectReceiverScreen.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/Details.js
+
+./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/app/layout.tsx
+ ⚠ ./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/sign-client/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/receiver/index.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/screens/WalletConnectReceiverScreen.js
+./node_modules/thirdweb/dist/esm/react/web/ui/ConnectWallet/Details.js
+
+./node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in '/workspaces/vivi/node_modules/pino/lib'
+
+Import trace for requested module:
+./node_modules/pino/lib/tools.js
+./node_modules/pino/pino.js
+./node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/thirdweb/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/thirdweb/dist/esm/wallets/wallet-connect/controller.js
+./node_modules/thirdweb/dist/esm/wallets/create-wallet.js
+./node_modules/thirdweb/dist/esm/react/web/hooks/wallets/useAutoConnect.js
+./node_modules/thirdweb/dist/esm/exports/react.js
+./src/app/layout.tsx
+ GET /favicon.ico 200 in 26505ms
+ GET /_next/static/chunks/app/page.js 404 in 33222ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 33212ms
+ GET /_next/static/chunks/app/layout.js 404 in 26396ms
+[?25h
+Done in 108.38s.
