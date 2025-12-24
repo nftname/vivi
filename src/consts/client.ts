@@ -1,9 +1,15 @@
 import { createThirdwebClient } from "thirdweb";
 
-// Keep this fallback ONLY to prevent build failures
+// 1. Get Client ID (Fail-safe)
 const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID || "1234567890";
 
-// FINAL REVERT: No storage config, no gateway config. Just the raw client.
+// 2. Safe Gateway Configuration
+// We only define the base URL. We do NOT use complex path resolution here to avoid crashes.
 export const client = createThirdwebClient({
   clientId: clientId,
+  config: {
+    storage: {
+      gatewayUrl: "https://beige-kind-cricket-922.mypinata.cloud/ipfs/",
+    },
+  },
 });
