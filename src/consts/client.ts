@@ -1,12 +1,8 @@
 import { createThirdwebClient } from "thirdweb";
 
-// Check both variable names to be safe
-const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID;
-
-if (!clientId) {
-    throw new Error("No client ID provided in .env.local");
-}
+// Attempt to retrieve the client ID, but fallback to an empty string to prevent build crashes
+const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID || "";
 
 export const client = createThirdwebClient({
-    clientId: clientId,
+  clientId: clientId,
 });
