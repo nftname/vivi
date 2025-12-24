@@ -1,7 +1,12 @@
 import { createThirdwebClient } from "thirdweb";
 
-// Fallback is REQUIRED to prevent build error: "No client ID provided"
-const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID || "00000000000000000000000000000000";
+// Remove the invalid fallback string to stop the client-side crash
+const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID;
+
+if (!clientId) {
+  // This will fail at build time if the key is missing in Vercel, which is better than a runtime crash.
+  throw new Error("No client ID provided"); 
+}
 
 export const client = createThirdwebClient({
   clientId: clientId,
