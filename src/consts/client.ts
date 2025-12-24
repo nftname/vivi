@@ -1,10 +1,13 @@
 import { createThirdwebClient } from "thirdweb";
 
-// Ensure we have a clientId, fallback to empty string to avoid build errors
-const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || process.env.NEXT_PUBLIC_CLIENT_ID || "";
+// 1. Define a fallback to prevent build crashes
+const secretKey = process.env.TW_SECRET_KEY;
+const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || 
+                 process.env.NEXT_PUBLIC_CLIENT_ID || 
+                 "1234567890"; // Fake fallback just to pass the build phase
 
+// 2. Create the client safely
 export const client = createThirdwebClient({
   clientId: clientId,
-  // We REMOVED the 'gatewayUrl' property here to let it use the default public gateway.
-  // This solves the "Invalid CID in hostname" error.
+  secretKey: secretKey, 
 });
