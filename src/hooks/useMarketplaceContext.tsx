@@ -39,8 +39,8 @@ type TMarketplaceContext = {
   contractMetadata:
     | {
         [key: string]: any;
-        name: string;
-        symbol: string;
+        name: string | null;
+        symbol: string | null;
       }
     | undefined;
   refetchAllListings: Function;
