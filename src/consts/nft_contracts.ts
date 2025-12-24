@@ -1,53 +1,13 @@
-import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy } from "./chains";
+import { getContract } from "thirdweb";
+import { client } from "./client";
+import { exampleChain } from "./chains";
 
-export type NftContract = {
-  address: string;
-  chain: Chain;
-  type: "ERC1155" | "ERC721";
-
-  title?: string;
-  description?: string;
-  thumbnailUrl?: string;
-  slug?: string;
-};
-
-/**
- * Below is a list of all NFT contracts supported by your marketplace(s)
- * This is of course hard-coded for demo purpose
- *
- * In reality, the list should be dynamically fetched from your own data source
- */
-export const NFT_CONTRACTS: NftContract[] = [
-  {
-    address: "0x6b869a0cF84147f05a447636c42b8E53De65714E",
-    chain: avalancheFuji,
-    title: "Steakhouse: Liberatorz",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeigonh3hde5suwcb3qvkh6ljtvxv7ubfmcqbwfvi3ihoi3igd27jwe/SteakhouseLogo.svg",
-    type: "ERC721",
-  },
-  {
-    address: "0xC5A2c72c581eA4A17e17bEeF38a9597132830401",
-    chain: avalancheFuji,
-    title: "Ugly Waifu",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidaadqapi7twzd7pjp24tu4ngsr3teubrhop7hg3jk3oj6lqysfgm/OS-LOGO.png",
-    slug: "ugly-waifu",
-    type: "ERC721",
-  },
-
-  {
-    address: "0x0896Db00D8987Fba2152aa7c14c4255eBC7354cE",
-    chain: avalancheFuji,
-    title: "Unnamed Collection",
-    description: "",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/Qmct2vS78Uwug3zVtqQognskPPRmd4wRQiaDAQWt1kRJws/0.png",
-    slug: "unnamed-collection",
-    type: "ERC721",
-  },
-  {
+// My Polygon NFT Collection Contract
+export const nftContract = getContract({
+    address: "0x8e46c897bc74405922871a8a6863ccf5cd1fc721",
+    chain: exampleChain,
+    client,
+});
     address: "0x0ACaCa3d3F64bb6e6D3564BBc891c58Bd4A4c83c",
     chain: avalancheFuji,
     title: "GoroBot",
