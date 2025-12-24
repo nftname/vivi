@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic'; // Prevents build timeouts
+
 import { Token } from "@/components/token-page/TokenPage";
 
 export default function ListingPage({
