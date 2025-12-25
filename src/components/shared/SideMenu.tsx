@@ -60,8 +60,11 @@ export function SideMenu() {
             <Box>
               <ConnectButton theme={colorMode} client={client} />
             </Box>
+            <Link href="/mint" display="block" mt="4">
+              Mint
+            </Link>
             {account && (
-              <Link href="/profile">
+              <Link href="/profile" display="block" mt="4">
                 Profile {ensName ? `(${ensName})` : ""}
               </Link>
             )}

@@ -50,6 +50,15 @@ export function Navbar() {
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>
+          <Button
+            as={Link}
+            href="/mint"
+            height="56px"
+            mr="10px"
+            _hover={{ textDecoration: "none" }}
+          >
+            Mint
+          </Button>
           <ToggleThemeButton />
           {account && wallet ? (
             <ProfileButton address={account.address} wallet={wallet} />
