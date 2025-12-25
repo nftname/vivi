@@ -196,12 +196,13 @@ export default function MintPage() {
                           attributes: [{ trait_type: "Tier", value: tier.name }]
                         };
                         const uri = await upload({ client, files: [metadata] });
+                        
                         const isAdmin = account?.address === ownerAddress;
                         
                         if (isAdmin) {
                           return prepareContractCall({
                             contract,
-                            method: "function authorizedMint(string _name, uint8 _tier, string _tokenURI)",
+                            method: "function reserveName(string _name, uint8 _tier, string _tokenURI)",
                             params: [nameInput, tier.index, uri],
                           });
                         } else {
@@ -212,6 +213,7 @@ export default function MintPage() {
                              params: [usdAmountWei]
                           });
                           const valueToSend = (costInMatic * BigInt(101)) / BigInt(100);
+                          
                           return prepareContractCall({
                             contract,
                             method: "function mintPublic(string _name, uint8 _tier, string _tokenURI) payable",
